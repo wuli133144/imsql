@@ -1,0 +1,14 @@
+CREATE TABLE `t_user_token` (
+	`status` TINYINT(4) NOT NULL DEFAULT '1',
+	`create_ts` DATETIME NOT NULL,
+	`update_ts` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`im_user_id` BIGINT(11) NOT NULL,
+	`client_type` TINYINT(4) NOT NULL,
+	`token` VARCHAR(256) NOT NULL,
+	`record_id` BIGINT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`record_id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=5
+;
